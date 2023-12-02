@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <%- include('../partials/headauth'); %>
+</head> 
+<body>
+    <section id="auth">
+        <div id="authImg"></div>
+        <div id="authInput">
+            <div>
+            <h1>Welcome back</h1>
+            <form id="login" >
+                    <input class="input_auth  auth_email" type="email" name="email" id="email" required placeholder="E-mail" required>
+                    <input class="input_auth  auth_pass" type="password" name="password" id="password" required placeholder="Password" required>
+                    <div id="loading"></div>
+                    <div id="reg_error"></div>
+            <input class="regbtn" type="submit" name="submit" value="Login">
+            </form>
+            <p class="already">Need account ? <a class="link_black" href="/registration">Registration</a> </p>
+        </div>
+        </div>
+    </section>
+    <script src="partials/js/login.js"></script>
+</body>
+</html>

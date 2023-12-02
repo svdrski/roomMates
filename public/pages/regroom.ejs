@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="/partials/js/auth_client.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> new room</title>
+
+    <%- include('../partials/head'); %>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+</head> 
+<body>
+
+    <%- include('../partials/header'); %>
+
+<section class="contentBox">
+    <h1>Submit new room</h1>
+    <form id='registr' method="POST" enctype="multipart/form-data">
+      <div id='section1'>
+          <h3 class="mt60">Address</h3>
+        <input id="pacinput" class="controls regInput wp60" name="address" location="" type="text" placeholder="Search Box"/>
+        <div id="map"></div>
+      </div>
+
+      <div id='section2'>
+          <h3 class="mt60">Information</h3>
+          <input type="text" class="regInput" name="title" id="title" placeholder="Title">
+          <textarea name="description" class="regInput descarea" placeholder="Description"></textarea>
+              <select name="type" class="regInput" id="cars">
+                  <option value="" disabled selected>Apartment type</option>
+                  <option value="Apartments">Apartments</option>
+                  <option value="House">House</option>
+                  <option value="Guesthouses">Guesthouses</option>
+                  <option value="Condominium">Condominium</option>
+                  <option value="Hostel">Hostel</option>
+              </select>
+           <input type="number" name="size" class="regInput" placeholder="Room Size (m)">
+
+           <h4>Comfort</h4>
+           <div>
+                <label class="checkbox-button">
+                    <input type="checkbox" name="Conditioning" id="Conditioning">
+                    <span class="checkmark">Air Conditioning</span>
+               </label>
+                    <label class="checkbox-button">
+                        <input type="checkbox" name="Storage" id="Storage">
+                        <span class="checkmark">Storage</span>
+                   </label>
+                        <label class="checkbox-button">
+                            <input type="checkbox" name="Laundry" id="Laundry">
+                            <span class="checkmark">Laundry</span>
+                       </label>
+                            <label class="checkbox-button">
+                                <input type="checkbox" name="Dishwasher" id="Dishwasher">
+                                <span class="checkmark">Dishwasher</span>
+                           </label>
+                                 <label class="checkbox-button">
+                                    <input type="checkbox" name="Pool" id="Pool">
+                                    <span class="checkmark">Pool</span>
+                                </label>
+                                        <label class="checkbox-button">
+                                            <input type="checkbox" name="Bathroom" id="Bathroom">
+                                            <span class="checkmark">Private Bathroom</span>
+                                        </label>
+                                            <label class="checkbox-button">
+                                                <input type="checkbox" name="Parking" id="Parking">
+                                                <span class="checkmark">Parking</span>
+                                             </label>
+                                                 <label class="checkbox-button">
+                                                    <input type="checkbox" name="Elevator" id="Elevator">
+                                                    <span class="checkmark">Elevator</span>
+                                                 </label>
+                                                         <label class="checkbox-button">
+                                                            <input type="checkbox" name="Entrance" id="Entrance">
+                                                            <span class="checkmark">Private Entrance</span>
+                                                         </label>
+                                                         </div>
+      </div>
+
+       <div id='section3'>
+          <h3 class="mt60">Availability</h3>
+          <label class="lbl" for="availability">Available to check in:</label>
+          <input type="date" class="regInput ff" name="availability">
+
+          <label class="lbl" for="rate">Monthly Rental rate ILS:</label>
+          <input type="number" class="regInput ff" name="rate">
+      </div>
+
+      <div id='section4'>
+          <h3 class="mt60">Household</h3>
+              <div class="dfc">
+              <img id="previewImage" src="/static/user_profile.svg" alt="Image Preview">
+              <label for="fileInput" class="uplprof">add photo</label>
+              <input type="file" id="fileInput" name="fileInput" accept="image/*" value="аааа">
+              </div>
+
+          <div class="dfb">
+               <div>
+                    <label class="lbl" for="name">Name</label>
+                   <input type="text" class="regInput ff" name="name">
+              </div>
+              <div style="margin: 0 10px;">
+                  <label class="lbl" for="age" >Age</label>
+                  <input type="number" class="regInput ff w100" name="age">
+              </div>
+              <select name="sex" class="regInput">
+                      <option value="" disabled selected>Sex</option>
+                      <option value="Men">Men</option>
+                      <option value="Woman">Woman</option>
+                </select>
+          </div>
+
+          <select name="sex" class="regInput">
+                      <option value="" disabled selected>Language</option>
+                      <option value="English">English</option>
+                      <option value="Hebrew">Hebrew</option>
+                      <option value="Spanish">Spanish</option>
+                      <option value="French">French</option>
+          </select>
+
+          <div class="dfb">
+          <div>
+          <label class="lbl" for="people_in_household" >People in house quant</label>
+          <input type="number" class="regInput ff" name="people_in_household">
+          </div>
+
+          <select name="pets" class="regInput petsinpt">
+                      <option value="" disabled selected>Do you have pets?</option>
+                      <option value="no">no</option>
+                      <option value="Cats">Cats</option>
+                      <option value="Dogs">Dogs</option>
+                      <option value="Fish">Fish</option>
+          </select>
+          </div>
+      </div>
+
+      <div id='section5'>
+          <h3 class="mt60">Lifestyle</h3>
+       <div class="df">
+       <div class="w100p mr14">
+          <label class="lbl" for="getup" >Get Up</label>
+          <input type="time" class="regInput w100p ff" name="getup">
+      </div>
+      <div class="w100p">
+          <label class="lbl" for="gotobed" >Go To Bed</label>
+          <input type="time" class="regInput w100p ff" name="gotobed">
+      </div>
+       </div>
+
+       <select name="smoker" class="regInput">
+                      <option value="" disabled selected>Do you smoke?</option>
+                      <option value="No">No</option>
+                      <option value="Yes">Yes</option>
+       </select>
+
+      <input type="text" class="regInput" name="schedule" placeholder="Work Schedule">
+
+      <select name="cleanliness" class="regInput">
+                      <option value="" disabled selected>My Cleanliness</option>
+                      <option value="Cleanliness">Cleanliness</option>
+                      <option value="Neatness">Neatness</option>
+                      <option value="Untidiness">Untidiness</option>
+       </select>
+      </div>
+
+          <div id='section6'>
+          <h3 class="mt60">Roommate preference</h3>
+                   <div class="df">
+                   <div class="w100p mr14">
+                      <label class="lbl" for="maxpeople" >Maximum people <span id='rangeValuepl'>1</span> </label>
+                      <input type="range" id='maxpeople' name="maxpeople" min="1" max="6" value="0" step="1" >
+                  </div>
+                  <div class="w100p">
+                     <label class="lbl" for="age" >Age 18 -  <span id='rangeValueal'>18</span></label>
+                      <input type="range" id='age' name="maxage" min="18" max="90" value="0" step="1">
+                  </div>
+                   </div>
+
+                   <label class="lbl" for="smokepref" >Smoke</label>
+                   <select name="smokepref" id='smokepref' class="regInput">
+                      <option value="Yes" selected>Yes</option>
+                      <option value="neutral">Neutral</option>
+                      <option value="No">No</option>
+                    </select>
+
+                    <label class="lbl" for="petspref" >Allow pets ?</label>
+                    <select name="petspref" class="regInput">
+                      <option value="Yes" selected>Yes</option>
+                      <option value="neutral">Discussed</option>
+                      <option value="No">No</option>
+                    </select>
+      </div>
+
+         <div class="mt60" id='section7'>
+        <h3 >Photo</h3>
+        <label for="phinput" class="uplimg">Select photos</label>
+        <input type="file" class="phinput" id='phinput' name='phinput' onchange="preview(this)" multiple>
+        <div class="preview-area"></div>
+         </div>
+
+</form>
+
+
+
+</section>
+
+
+<div id="regNav">
+    <button id='showprev'>Back</button>
+        <span id='regstatus'> 1/7</span>
+           <input type="submit" id='finreg' class="registrbtn"  value="Submit new room" form="registr">
+    <button id='shownext' class="registrbtn">Next</button>
+</div>
+
+
+  <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKGFictnuSaDxWQUHfaJ8hLASGPM8lVHk&language=en&callback=initAutocomplete&libraries=places&v=weekly"
+      defer
+    ></script>
+        <script src="/partials/js/regroom.js"></script>
+</body>
+</html>

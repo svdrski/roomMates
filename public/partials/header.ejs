@@ -1,0 +1,43 @@
+<div id='header'>
+
+    <div class='menuleft'>
+        <img class="searchpin" src="/static/pin.svg">
+        <form id="searchform"><input id='searchinpt' name="search" type='text'></form>
+        <nav>
+                <a href="/search">Rooms</a>
+        </nav>
+    </div>
+
+    <div class='menuright'>
+
+        <a target="_blank" id='myrooms' class='myrooms' href="/myrooms">
+            <span style="margin: 0 25px 0 5px;">My rooms</span>
+        </a>
+
+        <div class="profilehead dfc">
+            <div class="logout">
+                <span id='profname' class="profname"></span>
+                <button id="logout">Log out</button>
+            </div>
+            <img class="proficn" src="/static/user_profile.svg">
+        </div>
+        
+    </div>
+
+</div>
+
+
+<script>
+        //logout from page and redirect to login
+        document.getElementById('logout').addEventListener('click', ()=>{
+        localStorage.clear()
+        window.location.href = '/login'
+        })
+
+        //search field action
+        document.getElementById('searchform').addEventListener('submit',(e)=>{
+        e.preventDefault()
+        console.log(e.target.search.value)
+        window.location.href = `/search?value=${e.target.search.value}`
+        } )
+</script>

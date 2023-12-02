@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room</title>
+
+    <%- include('../partials/head'); %>
+    
+</head> 
+<body>
+
+    <%- include('../partials/header'); %>
+
+    <section id="roomblock">
+        <div id='contentblock'>
+                <h2><%= data.room.title ? data.room.title : "none" %></h2>
+                <p class="fulladdress"><%= data.room.fulladdress %></p>
+
+                <p class="mt40"> <span class="price">₪<%= data.room.rate %> </span>/ month</p>
+
+
+                <div class="owner mt40">
+                    <div class="ownprof">
+                        <img class="profimg" src="<%= data.profileimg[0] ? data.profileimg[0].url : '/static/placeholder.jpg' %>">
+                        <div class="ml30">
+                            <p class="nameprof"><%= data.room.name ? data.room.name : "Name" %>, <%= data.room.age ? data.room.age : "18" %></p>
+                            <img class="call" src="/static/btncall.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="owninform">
+                        <div class="df ">
+                            <p class="inf mb0">Get Up: <b><%= data.room.getup ? data.room.getup : "none" %></b></p>
+                            <p class="inf mb0" >Go to bed: <b><%= data.room.gotobed ? data.room.gotobed : "none" %></b></p>
+                        </div>
+                        
+                        <p class="inf">Smoker: <b><%= data.room.smoker ? data.room.smoker : "none" %></b></p>
+                        <p class="inf">Cleanliness: <b><%= data.room.cleanliness ? data.room.cleanliness : "none" %></b></p>
+                        <p  class="inf" id="schedule">Work Schedule: <b><%= data.room.schedule ? data.room.schedule : "none" %></b></p>
+                    </div>
+                </div>
+
+
+                <div class="features">
+                    <div class="mr40">
+                        <img src="/static/house.svg" alt="">
+                        <p><%= data.room.type ?  data.room.type : 'none'%></p>
+                    </div>
+
+                    <div>
+                        <img src="/static/size.svg" alt="">
+                        <p><%= data.room.size ?  data.room.size : 'none'%> meters</p>
+                    </div>
+                </div>
+
+                <p class="descript"><%= data.room.description ?  data.room.description : 'none'%></p>
+
+                <div class="infoblock">
+                    <p class=""> Available: <b><%= data.room.availability ?  data.room.availability : 'none'%></b></p>
+                    <p class="" style="    margin: 0 30px;"> People in house: <b><%= data.room.people_in_household ?  data.room.people_in_household : 'none'%></b></p>
+                    <p class=""> Animals: <b><%= data.room.pets ?  data.room.pets : 'none'%></b></p>
+
+                </div>
+
+                <span class="line"></span>
+
+                <div class="mw80p">
+                    <h3>Residence</h3>
+                    <% const features = data.room.comforts.split(',') %>
+                    <% for (feature of features) { %>
+                        <p class="fetr"> <%= feature %></p>
+                        <% } %>
+                </div>
+
+
+                <span class="line"></span>
+
+                <h3 ><%= data.room.fulladdress %></h3>
+
+                <div id="maproom"></div>
+                <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKGFictnuSaDxWQUHfaJ8hLASGPM8lVHk" onload="initMap()"></script>
+                <script src="/partials/js/room.js"></script>
+                
+                <script>
+                    const latitude = <%= data.room.attitude %>;
+                    const longitude = <%= data.room.longitude %>;
+                    createmap(latitude, longitude);
+                </script>
+
+
+        </div>
+
+
+
+
+        <div id='photoblock'>
+
+          <img class="rimg1" src="<%= data.photos[0] ? data.photos[0].url : '/static/placeholder.jpg' %>">
+                <div class="twophotos">
+                    <img class="smallimg" src="<%= data.photos[1] ? data.photos[2].url : '/static/placeholder.jpg' %>">
+                    <img class="smallimg" src="<%= data.photos[2] ? data.photos[2].url : '/static/placeholder.jpg' %>">
+                </div>
+          <img class="rimg1" src="<%= data.photos[3] ? data.photos[3].url : '/static/placeholder.jpg' %>">
+                <div class="twophotos">
+                    <img class="smallimg" src="<%= data.photos[4] ? data.photos[4].url : '/static/placeholder.jpg' %>">
+                    <img class="smallimg" src="<%= data.photos[5] ? data.photos[5].url : '/static/placeholder.jpg' %>">
+                </div>
+        </div>
+        
+    </section>
+</body>
+</html>

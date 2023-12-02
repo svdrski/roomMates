@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <%- include('../partials/headauth'); %>
+</head> 
+<body>
+    <section id="auth">
+        <div id="authImg"></div>
+        <div id="authInput">
+            <div>
+            <h1>Create account</h1>
+            <form id="registration" >
+                <div class="twoinpt">
+                    <input class="input_auth mr8" type="text" name="first_name" id="first_name" required placeholder="First name" required>
+                    <input class="input_auth" type="text" name="last_name" id="last_name" required placeholder="Last name" required>
+                </div>
+                <div>
+                    <input class="input_auth auth_email" type="email" name="email" id="email" required placeholder="E-mail" required>
+                </div>
+                <div class="twoinpt">
+                    <input class="input_auth mr8 auth_pass" type="password" name="password1" id="password1" required placeholder="Password" required>
+                    <input class="input_auth auth_pass" type="password" name="password2" id="password2" required placeholder="Confirm password" required>
+                </div>
+                  <div id="loading"></div>
+                  <div id="reg_error"></div>
+                <input class="regbtn" type="submit" name="submit" value="Create account">
+            </form>
+            <p class="already">Already have account ? <a class="link_black" href="/login">Log in</a> </p>
+        </div>
+        </div>
+    </section>
+    <script src="partials/js/registration.js"></script>
+</body>
+</html>

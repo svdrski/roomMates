@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <%- include('../partials/head'); %>
+</head> 
+<body>
+       <%- include('../partials/header'); %>
+
+       <section id="searchbox">
+
+        <div id="content">
+            <h2>Rooms in <span id="searcharea"></span></h2>
+            <div id="contents"></div>
+        </div>
+
+        <div id="mapblock"></div>
+        
+       </section>
+       
+       <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKGFictnuSaDxWQUHfaJ8hLASGPM8lVHk"></script>
+       <script src="/partials/js/room.js"></script>
+
+    <script src="partials/js/search.js"></script>
+</body>
+</html>
