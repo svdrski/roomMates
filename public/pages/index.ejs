@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <%- include('../partials/headauth'); %>
+</head> 
+<body>
+    
+    <div class="headdrr">
+        <img src="../static/logggo.svg">
+
+        <div>
+            <a href='/login' class="logiin">Login</a>
+            <a href="/registration" class="Registration">Registration</a>
+        </div>
+    
+    </div>
+
+
+    <div class="mainContainer">
+
+        <section class="lefSidesection">
+            <div>
+                <h1>Discover Ideal Roommates & Rentals</h1>
+                <p>Find, Connect, and Thrive in Your New Space</p>
+                <form id="searchform">
+                    <input class="srchinpt" type="text" name="city" placeholder="Location Search"/>
+                    <input class="srcgbtnn" type="submit" value="">
+                </form>
+        
+                <img class="badge" src="../static/badge.svg"/>
+            </div>
+           
+        </section>
+
+        <section class="rightSideContainer">
+            <div class="topimg">
+                <a href="/search">Let’s Start</a>
+            </div>
+            <div class="infspan">
+                <p>1000+</p>
+                <p>Unique places</p>
+            </div>
+
+            <div class="citiesPrev">
+                <a href="/search?value=tel%20aviv-yafo" class="leftprev imagepe" href="">
+                    <p>Tel Aviv</p>
+                    <img src='../static/pinmappcityy.svg'>
+                </a>
+
+                <a href="/search?value=bat%20yam" class="rightprev imagepe" href="">
+                    <p>Bat Yam</p>
+                    <img src='../static/pinmappcityy.svg'>
+                </a>
+            </div>
+
+            
+        </section>
+
+    </div>
+      <script>
+        document.getElementById('searchform').addEventListener('submit',(e)=>{
+        e.preventDefault()
+        console.log(e.target.city.value)
+        window.location.href = `/search?value=${e.target.city.value}`
+        } )
+    </script>
+</body>
+</html>

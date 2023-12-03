@@ -854,7 +854,6 @@ transition: .2s;
 
 
 #searchform{
-    width: 60%;
     margin-right: 20px;
 }
 
@@ -870,6 +869,246 @@ transition: .2s;
 .delimg:hover{
     cursor: pointer;
 }
+
+
+.mainContainer{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 80vh;
+    justify-content: space-between;
+    margin: 0px 13%;
+    margin-top: 40px;
+}
+.lefSidesection{
+    width: 50%;
+    display: flex;
+    min-width: 450px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.lefSidesection form{
+    max-width: 370px;
+}
+
+.lefSidesection h1{
+    max-width: 338px;
+    font-size: 53px;
+    font-weight: 700;
+}
+
+
+.lefSidesection p {
+    color: #757575;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+.srchinpt{
+    width: 100%;
+    height: 50px;
+    border-radius: 222px;
+    border: 1px solid #B4B4B4;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
+.srcgbtnn{
+    position: absolute;
+    margin: 40px 0px 0px -50px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 200px;
+    background-color: #E45505;
+    background-image: url('../static/locattn.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px;
+    transition: .2s;
+
+}
+
+.srcgbtnn:hover{
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: .2s;
+}
+
+.rightSideContainer{
+    width: 50%;
+    height: 100%;
+    min-width: 370px;
+    max-width: 800px;
+}
+
+.topimg{
+    background-image: url('../static/hometopimg.jpg');
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    border-radius: 30px;
+    padding: 40% 0 4% 4%;
+    box-sizing: border-box;
+}
+
+.topimg a {
+    height: 21px;
+    width: 110px;
+    border: none;
+    text-align: center;
+    padding: 2%;
+    background-color: #ffffffc9;
+    border-radius: 60px;
+}
+
+.topimg a:hover {
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.infspan{
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    border-radius: 200px;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.citiesPrev{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    height: 34%;
+
+}
+
+
+.leftprev{
+    background-image: url('../static/telaviv.jpg');
+}
+
+.rightprev{
+    background-image: url('../static/batyam.jpg');
+}
+
+
+
+.imagepe{
+    width: calc(50% - 5px);
+    min-height: 190px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    background-size: cover;
+}
+
+.citiesPrev a {
+    display: flex;
+    padding: 0 0 30px 30px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.citiesPrev p {
+    color: #fff;
+    font-size: 24px;
+}
+
+.citiesPrev img {
+    height: 50px;
+}
+
+.badge{
+    margin-top: 50px;
+}
+
+.logiin{
+    background-color: #E45505;
+    padding: 9px 23px;
+    border-radius: 20px;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.headdrr{
+    display: flex;
+    padding: 0 13%;
+    margin: 30px 0;
+    width: 100%;
+    top: 0;
+    box-sizing: border-box;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headdrr img {
+    height: 35px;
+}
+
+
+@media (max-width: 1216px) {
+
+    .mainContainer{
+        margin: 15px;
+    }
+    .lefSidesection{
+        margin-top: 40px;
+        width: 90%;
+        min-width: 0 !important;
+    }
+
+    .lefSidesection h1{
+        font-size: 41px;
+    }
+    
+    .rightSideContainer{
+        min-width: 300px;
+        width: 100%;
+    }
+
+    .badge{
+        display: none;
+    }
+
+    .headdrr{
+        padding: 0 15px;
+    }
+
+    .headdrr img {
+        height: 26px;
+    }
+
+}
+
+@media(max-width: 550px){
+    .logiin{
+        padding: 2px 5px;
+        font-size: 13px;
+        margin-right: 4px;
+    }
+}
+
+
+
+
+
+
+
 
 
 

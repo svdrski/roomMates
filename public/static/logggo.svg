@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="372.817" height="67.701" viewBox="0 0 372.817 67.701">
+  <g id="Сгруппировать_46" data-name="Сгруппировать 46" transform="translate(-104 -51.562)">
+    <g id="Password" transform="translate(104 51.562)">
+      <path id="Контур_301" data-name="Контур 301" d="M56.349,42.531a2.6,2.6,0,0,1-5.208,0V38.7H46.53v3.826a2.6,2.6,0,0,1-5.208,0V38.7H33.976a9.03,9.03,0,1,1,0-5.208H53.745a2.6,2.6,0,0,1,2.6,2.6Zm-20-40.281C11.36,2.25,2.5,11.11,2.5,36.1s8.86,33.851,33.851,33.851S70.2,61.095,70.2,36.1,61.341,2.25,36.351,2.25Z" transform="translate(-2.5 -2.25)" fill-rule="evenodd"/>
+      <path id="Контур_302" data-name="Контур 302" d="M11.818,10.9a3.824,3.824,0,1,0,3.822,3.826A3.832,3.832,0,0,0,11.818,10.9Z" transform="translate(11.058 19.129)" fill-rule="evenodd"/>
+    </g>
+    <text id="Roommates" transform="translate(204.817 99.562)" font-size="51" font-family="Urbanist" font-weight="500"><tspan x="0" y="0">Roommates</tspan></text>
+  </g>
+</svg>
