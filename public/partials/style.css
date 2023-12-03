@@ -1274,6 +1274,38 @@ transition: .2s;
     .menuright{
         width: 60%;
     }
+
+
+    .contentBox{
+        padding: 15px;
+    }
+
+
+    #map{
+        width: 100%;
+    }
+
+
+    .dfb{
+        display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    }
+
+    .petsinpt{
+        margin: 0;
+    }
+
+
+    .mt60{
+        display: flex;
+        max-width: 94%;
+    }
+
+    #regNav{
+        padding: 0 5px;
+    }
+
 }
 
 @media(max-width: 550px){
