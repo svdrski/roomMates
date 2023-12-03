@@ -88,9 +88,9 @@ nav a {
 }
 
 .searchpin{
-    position: absolute;
-    margin-left: 16px;
     height: 21px;
+    margin-right: -32px;
+    z-index: 1;
 }
 
 .menuright a{
@@ -1070,6 +1070,11 @@ transition: .2s;
     height: 35px;
 }
 
+.mainlogo{
+    height: 27px;
+    margin-right: 55px;
+}
+
 
 @media (max-width: 1216px) {
 
@@ -1078,14 +1083,27 @@ transition: .2s;
     }
     .lefSidesection{
         margin-top: 40px;
-        width: 90%;
+        width: 100%;
         min-width: 0 !important;
+        max-width: 800px;
     }
 
     .lefSidesection h1{
         font-size: 41px;
     }
     
+    .lefSidesection form{
+        max-width: 100%;
+    }
+
+    #searchform{
+        margin-right: 0;
+    }
+
+    .containInpp{
+        width: 100%;
+    }
+
     .rightSideContainer{
         min-width: 300px;
         width: 100%;
@@ -1116,6 +1134,7 @@ transition: .2s;
     }
 
     #authImg{
+        margin-top: 20px;
         height: 30% !important;
         width: 100% !important;
         border-radius: 40px !important;
@@ -1138,13 +1157,131 @@ transition: .2s;
         max-width: 420px;
     }
 
+    #login{
+        max-width: 430px;
+    }
+
+    #searchbox{
+        flex-wrap: wrap;
+        max-width: 400px;
+        padding: 15px;
+    }
+
+    #mapblock{
+        height: 300px;
+        width: 100%;
+        margin: 0;
+    }
+
+    #roomcard a{
+        display: inline !important;
+    }
+
+    #content{
+    margin: 0;
+    width: 100%;
+    height: auto !important;
+    }
+
+    .cardimg{
+        height: 200px !important;
+    }
+
+    #contents {
+        flex-wrap: wrap;
+    }
+
+    #roomcard{
+        width: 100%;
+    }
+
+    #roomcard a {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blockhref{
+        height: 200px;
+    }
+
+    .cardinf{
+        margin-top: 20px;
+    }
+
+
+
+
+    #roomblock{
+        padding: 15px;
+    }
+
+
+    .owner{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    #contentblock{
+        width: 100%;
+    }
+
+
+    .owninform{
+        margin: 20px 0 0 0;
+    }
+
+
+    .infoblock{
+        display: flex;
+        align-items: center;
+    }
+
+
+    #maproom{
+        max-width: 100%;
+    }
+
+    #photoblock{
+        width: 100%;
+    }
+
+    #roomblock{
+        flex-direction: column-reverse;
+    }
+
+    #myroomscont{
+        margin: 0;
+    }
+
+    .searchpin, #searchform{
+        display: none;
+    }
+
+
+    #header{
+        padding: 15px;
+    }
+
+    .menuleft{
+        width: 30%;
+    }
+
+    .menuleft nav{
+        display: none;
+    }
+
+    .menuright{
+        width: 60%;
+    }
 }
 
 @media(max-width: 550px){
     .logiin{
-        padding: 2px 5px;
-        font-size: 13px;
+        padding: 5px 14px;
+                font-size: 13px;
         margin-right: 4px;
+        
     }
 }
 
