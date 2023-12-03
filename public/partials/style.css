@@ -129,20 +129,21 @@ nav a {
     padding: 30px;
     width: 100%;
     box-sizing: border-box;
-    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 }
 
 #authImg{
-    background-image: url('/static/front.jpg');
+    background-image: url('../static/logphotoo.jpg');
     background-position: center;
     height: calc(100vh - 60px);
     background-size: cover;
-    max-width: 50%;
+    max-width: 420px;
     width: 50%;
+    height: 80%;
     min-width: 400px;
-    border-radius: 22px;
+    border-radius: 80px;
 }
 
 .input_auth {
@@ -162,12 +163,21 @@ nav a {
     display: flex;
     flex-direction: column;
     max-width: 50%;
-    width: 50%;
-    align-items: center;
     align-content: center;
     justify-content: center;
     min-width: 400px;
+    margin-left: 110px;
     
+}
+
+.logoaut{
+    height: 30px;
+    margin-bottom: 50px;
+}
+
+
+#authInput h1{
+    font-size: 34px;
 }
 
 .twoinpt{
@@ -1089,8 +1099,43 @@ transition: .2s;
         padding: 0 15px;
     }
 
+    .logoaut{
+        margin: 40px 0 20px 0;
+        height: 27px;
+    }
+
     .headdrr img {
         height: 26px;
+    }
+
+    #auth{
+        width: 100% !important;
+        padding: 0 20px !important;
+        justify-content: flex-start !important;
+        align-content: flex-start;
+    }
+
+    #authImg{
+        height: 30% !important;
+        width: 100% !important;
+        border-radius: 40px !important;
+        min-width: 0 !important;
+    }
+
+    #authInput{
+        margin: 0 !important;
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+
+    #login{
+        width: 100%;
+    }
+
+    #registration{
+        width: 100%;
+        margin-top: 30px;
+        max-width: 420px;
     }
 
 }
