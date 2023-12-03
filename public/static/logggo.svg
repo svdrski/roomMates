@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="372.817" height="67.701" viewBox="0 0 372.817 67.701">
-  <g id="Сгруппировать_46" data-name="Сгруппировать 46" transform="translate(-104 -51.562)">
+<svg xmlns="http://www.w3.org/2000/svg" width="373" height="67" viewBox="0 0 373 67">
+  <g id="Сгруппировать_46" data-name="Сгруппировать 46" transform="translate(-104 -52)">
     <g id="Password" transform="translate(104 51.562)">
-      <path id="Контур_301" data-name="Контур 301" d="M56.349,42.531a2.6,2.6,0,0,1-5.208,0V38.7H46.53v3.826a2.6,2.6,0,0,1-5.208,0V38.7H33.976a9.03,9.03,0,1,1,0-5.208H53.745a2.6,2.6,0,0,1,2.6,2.6Zm-20-40.281C11.36,2.25,2.5,11.11,2.5,36.1s8.86,33.851,33.851,33.851S70.2,61.095,70.2,36.1,61.341,2.25,36.351,2.25Z" transform="translate(-2.5 -2.25)" fill-rule="evenodd"/>
-      <path id="Контур_302" data-name="Контур 302" d="M11.818,10.9a3.824,3.824,0,1,0,3.822,3.826A3.832,3.832,0,0,0,11.818,10.9Z" transform="translate(11.058 19.129)" fill-rule="evenodd"/>
+      <path id="Контур_301" data-name="Контур 301" d="M56.5,42.688c0,1.437-1.563,2-3,2s-2-.563-2-2v-4h-5v4c0,1.437-1.563,2-3,2s-2-.563-2-2v-4h-8a7.93,7.93,0,0,1-8,6,9,9,0,0,1,0-18c4.076,0,6.875,3.3,8,7h20c1.437,0,3,.563,3,2Zm-20-40c-24.99,0-34,8.01-34,33s9.01,34,34,34,34-9.006,34-34S61.49,2.688,36.5,2.688Z" transform="translate(-2.5 -2.25)" fill-rule="evenodd"/>
+      <path id="Контур_302" data-name="Контур 302" d="M11.942,11.309c-2.114,0-4,.889-4,3a4.138,4.138,0,0,0,4,4,4.135,4.135,0,0,0,4-4C15.942,12.2,14.049,11.313,11.942,11.309Z" transform="translate(11.058 19.129)" fill-rule="evenodd"/>
     </g>
-    <text id="Roommates" transform="translate(204.817 99.562)" font-size="51" font-family="Urbanist" font-weight="500"><tspan x="0" y="0">Roommates</tspan></text>
+    <text id="Roommates" transform="translate(205 100)" font-size="51" font-family="Urbanist" font-weight="500"><tspan x="0" y="0">Roommates</tspan></text>
   </g>
 </svg>
