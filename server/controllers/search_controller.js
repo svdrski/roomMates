@@ -1,10 +1,11 @@
 const model = require('../models/search_mode.js')
+const key = process.env.MAP_KEY
 
 class search {
     
     // rendering search page
     static  async Open (req, res) {
-        res.render('search')
+        res.render('search', {key})
     }
 
     // get list of first 10 id's of rooms 

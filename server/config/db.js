@@ -4,11 +4,11 @@ require('dotenv').config()
 const db = knex({
     client: 'pg',
     connection:{
-        host: "trumpet.db.elephantsql.com",
-        port: 5432,
-        user: "gvcdnxom",
-        password: 'lJaD92jAtrLxhm7ODSMv1sqKAu6TUXGT',
-        database: "gvcdnxom",
+        host: process.env.DB_HOST,
+        port: process.env.DB_PORT,
+        user: process.env.DB_USER,
+        password: process.env.DB_PASSWORD,
+        database: process.env.DB_NAME,
     }
 })
 //

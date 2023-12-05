@@ -1,4 +1,5 @@
 const db = require('../models/getdata_model.js')
+const key = process.env.MAP_KEY
 
 
 // controller to get data 
@@ -9,6 +10,9 @@ class get {
         try{
             const {id} = req.params
             const data = await db.room(id)
+            data.key = key
+
+            console.log(data)
             res.render('room', {data})
         } catch (e) {console.log('Error ' + e)}
 

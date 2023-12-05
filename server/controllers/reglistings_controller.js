@@ -1,12 +1,14 @@
 const jwt = require('jsonwebtoken')
 const { v4: uuidv4 } = require('uuid');
 const room = require('../models/regroom_model.js')
+require('dotenv').config();
 
+const key = process.env.MAP_KEY
 
 class reg {
     //print page romm registration
     static Page (req, res) {
-        res.render('regroom')
+        res.render('regroom', {key})
     }
     
     // new room registration
