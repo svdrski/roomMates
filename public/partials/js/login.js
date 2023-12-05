@@ -13,7 +13,7 @@ document.getElementById('login').addEventListener('submit', async  (e)=> {
         //delete previous errors
         delError()
 
-        //show loading animation
+        //show loading animations
         loading.style.display = 'block'
 
         //request
